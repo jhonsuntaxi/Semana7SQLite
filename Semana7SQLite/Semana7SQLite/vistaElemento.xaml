@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Semana7SQLite.vistaElemento">
+    <ContentPage.Content>
+        <StackLayout Margin="0" Padding="0" BackgroundColor="LightGray">
+            <Frame Margin="15,20,15,20" HasShadow="True">
+                <StackLayout Margin="5">
+                    <Label x:Name="lblMensaje"/>
+                    <Label Text="Nombre: "/>
+                    <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+                    <Label Text="Usuario: " />
+                    <Entry x:Name="txtUsuario" Placeholder="Usuario"/>
+                    <Label Text="Contraseña: " />
+                    <Entry x:Name="txtPasswd" IsPassword="True" Placeholder="Nombre"/>
+
+                    <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked" BackgroundColor="DarkCyan"
+                            TextColor="white"/>
+                    <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked" BackgroundColor="#FF00FF"
+                            TextColor="White"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

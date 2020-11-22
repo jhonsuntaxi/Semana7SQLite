@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Semana7SQLite.vistaLogin">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese el Usuario"/>
+                <Entry x:Name="txtPasswd" Placeholder="Ingrese la contraseña" IsPassword="True"/>
+                <Button x:Name="btnLogin" Text="Iniciar Sesion" BackgroundColor="#E74C3C  " TextColor="White" 
+                        Clicked="btnLogin_Clicked"/>
+                <Button x:Name="btnRegistro" Text="Registrarse" BackgroundColor="#F5B7B1  " TextColor="White"
+                        Clicked="btnRegistro_Clicked"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
